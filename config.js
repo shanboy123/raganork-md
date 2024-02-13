@@ -22,13 +22,13 @@ const settingsMenu = [
   ]
 DATABASE_URL = process.env.DATABASE_URL === undefined ? './bot.db' : process.env.DATABASE_URL;
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
-if (!(process.env.SESSION || process.env.SESSION_ID)) throw new Error("No session found, add session before starting bot")
+if (!(process.env.SESSION || process.env.SESSION_ID)) throw new Error("Raganork~79f2052d46c92463919fec6e22ba93be:6a41374a354575493871673d")
 module.exports = {
     VERSION: 'v4.0.0',
     ALIVE: process.env.ALIVE || "https://i.imgur.com/KCnoMM2.jpg Hey {sender}, I'm alive \n Uptime: {uptime}",
     BLOCK_CHAT: process.env.BLOCK_CHAT || '',
     PM_ANTISPAM: convertToBool(process.env.PM_ANTISPAM) || '',
-    ALWAYS_ONLINE: convertToBool(process.env.ALWAYS_ONLINE) || false,
+    ALWAYS_ONLINE: convertToBool(process.env.ALWAYS_ONLINE) || true,
     MANGLISH_CHATBOT: convertToBool(process.env.MANGLISH_CHATBOT) || false,
     ADMIN_ACCESS: convertToBool(process.env.ADMIN_ACCESS) || false,
     PLATFORM:isHeroku?"Heroku":isRailway?"Railway":isKoyeb?"Koyeb":"Other server",isHeroku,isKoyeb,isVPS,isRailway,
